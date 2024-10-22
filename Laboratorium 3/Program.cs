@@ -11,7 +11,7 @@
             //Zadanie5();
             //Zadanie6();
             //Zadanie7();
-            Zadanie8();
+            //Zadanie8();
         }
 
         public static void Zadanie1()
@@ -61,9 +61,10 @@
 
             if (delta > 0)
             {
-                double root1 = (-b + Math.Sqrt(delta)) / (2 * a);
-                double root2 = (-b - Math.Sqrt(delta)) / (2 * a);
-                Console.WriteLine($"Pierwiastki równania kwadratowego: {root1} i {root2}");
+                double sqrtDelta = Math.Sqrt(delta);
+
+                Console.WriteLine($"x_1 = {(-b - sqrtDelta) / (2 * a)}");
+                Console.WriteLine($"x_2 = {(-b + sqrtDelta) / (2 * a)}");
             }
             else if (delta == 0)
             {
